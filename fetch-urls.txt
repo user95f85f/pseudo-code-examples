@@ -8,7 +8,14 @@ $date = Date.now.format('YYYY-MM-DD hh-mm-ss');
 /*
 auto-strip html, auto-wrap-to html, file-extension detect
 */
-file-put-contents("$HOME/Desktop/myreport$date.txt", $c);
-file-put-contents("$HOME/Desktop/myreport$date.html", $c);
+$file-txt-out = "$HOME/Desktop/myreport$date.txt";
+$file-html-out = "$HOME/Desktop/myreport$date.html";
+file-put-contents($file-txt-out, $c);
+file-put-contents($file-html-out, $c);
+
+Threads.multiThread(new Thread(){
+/*** the .conf is only opened if it exists */
+figure-out-and-execute-somehow($file-txt-out, "$file-txt-out.conf")
+});
 unset $c;
 exit 0;
