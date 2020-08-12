@@ -1,0 +1,14 @@
+
+@a = get-list-of-urls(); //from an sqlite database
+$b = fetch-all-data(@a); //with sockets
+unset @a;
+$c = create-report($b); #$c is a data-object
+unset $b;
+$date = Date.now.format('YYYY-MM-DD hh-mm-ss');
+/*
+auto-strip html, auto-wrap-to html, file-extension detect
+*/
+file-put-contents("$HOME/Desktop/myreport$date.txt", $c);
+file-put-contents("$HOME/Desktop/myreport$date.html", $c);
+unset $c;
+exit 0;
