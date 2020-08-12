@@ -20,7 +20,7 @@ unset $c;
 
 Threads.multiThread(new Thread(){
 /*** the .conf is only opened if it exists */
-sys.AI.figure-out-and-execute-somehow($file-txt-out, $file-txt-conf-out)
+sys.ai.figure-out-and-execute-somehow($file-txt-out, $file-txt-conf-out)
 });
 
 exit 0;
