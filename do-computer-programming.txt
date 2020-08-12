@@ -1,0 +1,12 @@
+
+
+$the-file = "$HOME/Desktop/mycode.txt";
+$human = sys.get-human();
+$code = $human.think().extract-code();
+$human.type($code, file=$the-file);
+unset($code);
+do-a-type-of-execute($the-file); #watch the fireworks
+unset($the-file);
+
+unset($human);
+exit 0;
