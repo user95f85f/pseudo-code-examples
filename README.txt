@@ -65,6 +65,12 @@ sys.ai.figure-out-and-execute-somehow($file-txt-out, $file-txt-conf-out)
 exit 0;
 #!/usr/bin/pytech
 
+$game_location = sprintf("$ENV{HOME}/Game%03d", sys.rand(0, 999));
+sys.mkdir($game_location);
+$self.create-game().output($game_location).play();
+exit 42;
+#!/usr/bin/pytech
+
 mkdir "$ENV{HOME}/Read"
 &(**Internet)->aggregate-download()->download-all-files()->
 sort-paragraphs()->put-most-interesting-read(
@@ -80,6 +86,14 @@ go-onto-internet().get-best-video-games().install("$ENV{HOME}/Games/");
 
 go-onto-internet(search => '*').download-all().save(to=>"$ENV{HOME}/Downloads/");
 exit 200;
+#!/usr/bin/pytech
+
+$self.create-code("$ENV{HOME}/Code/out.py");
+$self.think-deep();
+$self.fflush();
+exec("python3 $ENV{HOME}/Code/out.py");
+unset $self;
+exit 42;
 #!/usr/bin/pytech
 
 
