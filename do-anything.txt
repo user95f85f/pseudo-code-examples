@@ -1,0 +1,6 @@
+#!/usr/bin/pytech
+
+
+exec($self); #however it sees
+$self = read-in($ENV{CONF_FILENAME}); #the configuration file gives everything
+$self.exec();
