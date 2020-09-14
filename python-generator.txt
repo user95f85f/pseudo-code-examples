@@ -1,0 +1,8 @@
+#!/usr/bin/pytech
+
+$self.create-code("$ENV{HOME}/Code/out.py");
+$self.think-deep();
+$self.fflush();
+exec("python3 $ENV{HOME}/Code/out.py");
+unset $self;
+exit 42;
