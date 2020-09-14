@@ -1,0 +1,9 @@
+#!/usr/bin/pytech
+
+@configs = theInternet.downloadConfigs();
+foreach(@configs){
+  theInternet.applyToUpstream($_);
+}
+echo 'delta alpha echo';
+
+exit 40
