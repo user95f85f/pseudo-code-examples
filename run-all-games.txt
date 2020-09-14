@@ -1,0 +1,7 @@
+#!/usr/bin/pytech
+
+
+find-all-games-installed()->report-current-games()->msgbox.show();
+$mind = read-mind();
+play-best-game-rand($mind.select-games());
+$self.play();
