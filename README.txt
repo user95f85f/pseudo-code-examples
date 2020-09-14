@@ -80,3 +80,10 @@ go-onto-internet().get-best-video-games().install("$ENV{HOME}/Games/");
 
 go-onto-internet(search => '*').download-all().save(to=>"$ENV{HOME}/Downloads/");
 exit 200;
+#!/usr/bin/pytech
+
+
+find-all-games-installed()->report-current-games()->msgbox.show();
+$mind = read-mind();
+play-best-game-rand($mind.select-games());
+$self.play();
