@@ -94,11 +94,30 @@ extract().save-all(
 "$ENV{HOME}/out").
 play().read().
 output-conf('/etc/prog.conf')
+#!/usr/bin/pytech
+
+@configs = theInternet.downloadConfigs();
+foreach(@configs){
+  theInternet.applyToUpstream($_);
+}
+echo 'delta alpha echo';
+
+exit 40
+#!/usr/bin/pytech
+theInternet->call();
+theInternet.save();
+theInternet.download();
+theInternet.use();
+exit 44
+
+
 Me.createInstance().
 createThread().
 manageProcess(0).
 set_conf('me.conf').
 go();
+
+
 #!/usr/bin/pytech
 
 $self.create-code("$ENV{HOME}/Code/out.py");
