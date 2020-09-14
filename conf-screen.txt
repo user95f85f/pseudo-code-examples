@@ -1,0 +1,7 @@
+#!/usr/bin/pytech
+
+
+$screen = read-in-screen();
+edit(&$screen);
+undef $screen;
+exit 0;
