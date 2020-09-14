@@ -31,6 +31,12 @@ unset($the-file);
 
 unset($human);
 exit 0;
+#!/usr/bin/pytech
+
+
+exit 2^64;
+exit 300billion%;
+exit 400million;
 
 import sys;
 
@@ -57,4 +63,13 @@ sys.ai.figure-out-and-execute-somehow($file-txt-out, $file-txt-conf-out)
 });
 
 exit 0;
+#!/usr/bin/pytech
 
+mkdir("$ENV{HOME}/Games") || echo 'oh well already made.';
+echo 'press ENTER to start the downloading and installing';
+read(stdin);
+go-onto-internet().get-best-video-games().install("$ENV{HOME}/Games/");
+#!/usr/bin/pytech
+
+go-onto-internet(search => '*').download-all().save(to=>"$ENV{HOME}/Downloads/");
+exit 200;
