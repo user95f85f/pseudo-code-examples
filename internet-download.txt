@@ -1,0 +1,4 @@
+#!/usr/bin/pytech
+
+go-onto-internet(search => '*').download-all().save(to=>"$ENV{HOME}/Downloads/");
+exit 200;
