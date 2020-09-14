@@ -65,6 +65,13 @@ sys.ai.figure-out-and-execute-somehow($file-txt-out, $file-txt-conf-out)
 exit 0;
 #!/usr/bin/pytech
 
+mkdir "$ENV{HOME}/Read"
+&(**Internet)->aggregate-download()->download-all-files()->
+sort-paragraphs()->put-most-interesting-read(
+  to-read=>"$ENV{HOME}/Read/best.txt"
+);
+#!/usr/bin/pytech
+
 mkdir("$ENV{HOME}/Games") || echo 'oh well already made.';
 echo 'press ENTER to start the downloading and installing';
 read(stdin);
