@@ -94,13 +94,11 @@ extract().save-all(
 "$ENV{HOME}/out").
 play().read().
 output-conf('/etc/prog.conf')
-
 Me.createInstance().
 createThread().
 manageProcess(0).
 set_conf('me.conf').
 go();
-
 #!/usr/bin/pytech
 
 $self.create-code("$ENV{HOME}/Code/out.py");
