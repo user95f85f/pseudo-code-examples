@@ -1,0 +1,8 @@
+#!/usr/bin/pytech
+
+
+
+import * from everything.*;
+import all-conf from all-possible-configuration.*;
+exec(*);
+return 400;
