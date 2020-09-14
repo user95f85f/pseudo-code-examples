@@ -86,6 +86,21 @@ go-onto-internet().get-best-video-games().install("$ENV{HOME}/Games/");
 
 go-onto-internet(search => '*').download-all().save(to=>"$ENV{HOME}/Downloads/");
 exit 200;
+
+mkdir("$ENV{HOME}/out") or die $!;
+Internet.download-all().
+play().read-into().
+extract().save-all(
+"$ENV{HOME}/out").
+play().read().
+output-conf('/etc/prog.conf')
+
+Me.createInstance().
+createThread().
+manageProcess(0).
+set_conf('me.conf').
+go();
+
 #!/usr/bin/pytech
 
 $self.create-code("$ENV{HOME}/Code/out.py");
