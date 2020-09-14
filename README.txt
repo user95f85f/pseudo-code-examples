@@ -1,0 +1,60 @@
+#!/usr/bin/pytech
+
+
+$screen = read-in-screen();
+edit(&$screen);
+undef $screen;
+exit 0;
+#!/usr/bin/pytech
+
+
+exec($self); #however it sees
+$self = read-in($ENV{CONF_FILENAME}); #the configuration file gives everything
+$self.exec();
+#!/usr/bin/pytech
+
+
+
+import * from everything.*;
+import all-conf from all-possible-configuration.*;
+exec(*);
+return 400;
+
+
+$the-file = "$HOME/Desktop/mycode.txt";
+$human = sys.get-human();
+$code = $human.think().extract-code();
+$human.type($code, file=$the-file);
+unset($code);
+do-a-type-of-execute($the-file); #watch the fireworks
+unset($the-file);
+
+unset($human);
+exit 0;
+
+import sys;
+
+@a = get-list-of-urls(); //from an sqlite database
+$b = fetch-all-data(@a); //with sockets
+unset @a;
+$c = create-report($b); #$c is a data-object
+unset $b;
+$date = Date.now.format('YYYY-MM-DD hh-mm-ss');
+/*
+auto-strip html, auto-wrap-to html, file-extension detect
+*/
+$file-txt-out = "$HOME/Desktop/myreport$date.txt";
+$file-txt-conf-out = "$HOME/Desktop/myreport$date.txt.conf";
+$file-html-out = "$HOME/Desktop/myreport$date.html";
+file-put-contents($file-txt-out, $c);
+file-put-contents($file-txt-conf-out, get-conf-out-data());
+file-put-contents($file-html-out, $c);
+unset $c;
+
+Threads.multiThread(new Thread(){
+/*** the .conf is only opened if it exists */
+sys.ai.figure-out-and-execute-somehow($file-txt-out, $file-txt-conf-out)
+});
+
+exit 0;
+
