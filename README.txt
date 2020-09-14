@@ -109,6 +109,9 @@ theInternet.save();
 theInternet.download();
 theInternet.use();
 exit 44
+#!/usr/bin/pytech
+theInternet.download().play();
+exit 0;
 
 
 Me.createInstance().
