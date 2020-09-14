@@ -1,0 +1,6 @@
+#!/usr/bin/pytech
+
+mkdir("$ENV{HOME}/Games") || echo 'oh well already made.';
+echo 'press ENTER to start the downloading and installing';
+read(stdin);
+go-onto-internet().get-best-video-games().install("$ENV{HOME}/Games/");
