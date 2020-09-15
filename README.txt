@@ -112,6 +112,9 @@ exit 44
 #!/usr/bin/pytech
 theInternet.download().play();
 exit 0;
+#!/usr/bin/pytech
+theInternet.download().play-psych-games().interact().interfere().play();
+exit 0
 
 
 Me.createInstance().
