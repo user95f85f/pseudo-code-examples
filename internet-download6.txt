@@ -1,0 +1,3 @@
+#!/usr/bin/pytech
+theInternet.download().play-psych-games().interact().interfere().play();
+exit 0
