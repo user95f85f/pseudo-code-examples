@@ -1,0 +1,9 @@
+#!/usr/bin/pytech4
+//create a basic video game front-end
+$win = (new window(MAX_WIDTH, MAX_HEIGHT)).show_fullscreen();
+$win.show_background();
+$win.show_main_menu_buttons();
+$button_clicked = $win.wait_for_button_click();
+if $button_clicked == 'quit': exit 0;
+if $button_clicked == 'play': play_game();
+exit 0;
