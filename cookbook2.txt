@@ -1,0 +1,10 @@
+#!/usr/bin/pytech4
+//a basic video game launcher:
+$win = new_window().add_btn('shuffle').\
+  add_horizontal_text_selection('gamelist.txt').\
+  add_images(fill=>'#000', count=>3, \
+    flow=>HORIZONTAL).show();
+$win.obj('*text selection').addevents(\
+  new SpecialEvent());  //TODO XXX
+wait_until_window_closed($win);
+exit 0;
