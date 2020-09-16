@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+.\clean-up-system.bat
+exit 0
