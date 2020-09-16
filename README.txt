@@ -1,3 +1,6 @@
+#!/usr/bin/ai
+Me.do-programming().submit().publish().receive-attention().receive-awards().be-+1000%-more-happy().be-+1000%-more-satisfied();
+exit 0;
 #!/usr/bin/pytech
 
 
