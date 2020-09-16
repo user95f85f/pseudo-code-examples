@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+.\do-chess.exe
+.\use-computer-screen.exe
+.\make-me-lazy.exe
+.\delete-all-screenlike-existences.bat
+.\create-random-computer-programs dump
+exit 0;
