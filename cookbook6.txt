@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+.\+500%harden-system.bat
+exit 0
