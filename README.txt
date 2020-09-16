@@ -5,6 +5,47 @@ $screen = read-in-screen();
 edit(&$screen);
 undef $screen;
 exit 0;
+#!/usr/bin/pytech4
+//create a basic video game front-end
+$win = (new window(MAX_WIDTH, MAX_HEIGHT)).show_fullscreen();
+$win.show_background();
+$win.show_main_menu_buttons();
+$button_clicked = $win.wait_for_button_click();
+if $button_clicked == 'quit': exit 0;
+if $button_clicked == 'play': play_game();
+exit 0;
+#!/usr/bin/pytech4
+//a basic video game launcher:
+$win = new_window().add_btn('shuffle').\
+  add_horizontal_text_selection('gamelist.txt').\
+  add_images(fill=>'#000', count=>3, \
+    flow=>HORIZONTAL).show();
+$win.obj('*text selection').addevents(\
+  new SpecialEvent());  //TODO XXX
+wait_until_window_closed($win);
+exit 0;
+#!/usr/bin/bash
+.\do-chess.exe
+.\use-computer-screen.exe
+.\make-me-lazy.exe
+.\delete-all-screenlike-existences.bat
+.\create-random-computer-programs dump
+exit 0;
+#!/usr/bin/bash
+.\clean-up-system.bat
+exit 0
+#!/usr/bin/bash
+.\a-300%good-programmer-created-this.exe
+exit 0
+#!/usr/bin/bash
+.\+500%harden-system.bat
+exit 0
+#!/usr/bin/bash
+.\validate-system.exe REM "system broken. exit 255"
+ret=$?
+if [ $ret -eq 255 ] && \
+echo 'the system is so broken that there is a <0% chance there have ever been >0% of good programmers'
+exit 0
 #!/usr/bin/pytech
 
 
