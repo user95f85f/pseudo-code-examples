@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+.\validate-system.exe REM "system broken. exit 255"
+ret=$?
+if [ $ret -eq 255 ] && \
+echo 'the system is so broken that there is a <0% chance there have ever been >0% of good programmers'
+exit 0
