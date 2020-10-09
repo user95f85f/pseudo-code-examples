@@ -1,7 +1,7 @@
 #!/usr/bin/pytech
-
 mkdir "$ENV{HOME}/Read"
 &(**Internet)->aggregate-download()->download-all-files()->
 sort-paragraphs()->put-most-interesting-read(
   to-read=>"$ENV{HOME}/Read/best.txt"
 );
+exit(0);
