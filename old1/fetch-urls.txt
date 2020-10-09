@@ -1,4 +1,4 @@
-
+#!/usr/bin/javpl
 import sys;
 
 @a = get-list-of-urls(); //from an sqlite database
