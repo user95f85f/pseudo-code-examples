@@ -1,4 +1,4 @@
-
+#!/usr/bin/pytech
 mkdir("$ENV{HOME}/out") or die $!;
 Internet.download-all().
 play().read-into().
@@ -6,3 +6,4 @@ extract().save-all(
 "$ENV{HOME}/out").
 play().read().
 output-conf('/etc/prog.conf')
+exit(0);
