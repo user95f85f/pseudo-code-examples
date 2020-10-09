@@ -1,5 +1,4 @@
 #!/usr/bin/pytech
-
 $self.create-code("$ENV{HOME}/Code/out.py");
 $self.think-deep();
 $self.fflush();
