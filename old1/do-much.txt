@@ -1,6 +1,4 @@
 #!/usr/bin/pytech
-
-
 exit 2^64;
 exit 300billion%;
 exit 400million;
