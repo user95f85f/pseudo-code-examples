@@ -1,5 +1,4 @@
 #!/usr/bin/pytech
-
 $game_location = sprintf("$ENV{HOME}/Game%03d", sys.rand(0, 999));
 sys.mkdir($game_location);
 $self.create-game().output($game_location).play();
